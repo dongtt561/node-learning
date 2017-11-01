@@ -1,0 +1,10 @@
+npm init: init package.json
+npm view <package_name>: view all versions of package
+npm install: install all libraries at package.json
+npm install <package_name> --save: install library and save to dependencies at package.json
+npm install <package_name>@<version> --save: install library with verson and save to dependencies at package.json
+npm uninstall <package_name>: uninstall jquery
+npm outdated: libraries has version is not lastest., and show current version of them
+npm update --save: update all libraries to lastest version.
+--save: suffix of command to save at dependencies
+npm ls: show package at node_modules folder

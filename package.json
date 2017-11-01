@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dongtt561/node-learning#readme",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "express": "^4.16.2",
+    "underscore": "^1.7.0"
   }
 }
