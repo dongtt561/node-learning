@@ -1,0 +1,22 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "learning node js",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongtt561/node-learning.git"
+  },
+  "author": "dongtt",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dongtt561/node-learning/issues"
+  },
+  "homepage": "https://github.com/dongtt561/node-learning#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
