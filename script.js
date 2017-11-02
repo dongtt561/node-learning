@@ -54,4 +54,3 @@ function fileExists(exists) {
 }
 
 fs.exists(file, fileExists);
-

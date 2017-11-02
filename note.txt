@@ -8,3 +8,22 @@ npm outdated: libraries has version is not lastest., and show current version of
 npm update --save: update all libraries to lastest version.
 --save: suffix of command to save at dependencies
 npm ls: show package at node_modules folder
+
+// require module
+var fs = require('fs');
+var events = require('events');
+
+// call module function
+path = "files/test.txt";
+var data = fs.readFile(path, function(err, data) {
+    if (!err) {
+        console.log(data.toString);
+    } 
+});
+
+// call function same variable: script.js
+
+
+//event
+
+
