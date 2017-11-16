@@ -10,8 +10,11 @@ npm update --save: update all libraries to lastest version.
 npm ls: show package at node_modules folder
 
 // require module
-var fs = require('fs');
-var events = require('events');
+var fs = require('fs'); // file module
+var events = require('events'); // event module
+var http = require('http'); // http module
+var domain = require('domain'); // domain module
+var domain = require('domain').create(); //. create domain
 
 // call module function
 path = "files/test.txt";
@@ -25,5 +28,18 @@ var data = fs.readFile(path, function(err, data) {
 
 
 //event
+emmiter.on("addUser", function(user, pass) {}); // listent chanel multi times
+emmiter.once("addUser", function(user, pass) {}); // listent chanel once time
+emmiter.listenerCount("addUser"); // count emmit in channel "addUser"
+emmiter.removeListener("addUser", <function of listener>); // remove channel "addUser"
+
+
+// Handle error
+
+process.on('uncaughtException', function() {
+
+    //handle
+    console.log('error');
+});
 
 
