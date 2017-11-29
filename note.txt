@@ -35,11 +35,13 @@ emmiter.removeListener("addUser", <function of listener>); // remove channel "ad
 
 
 // Handle error
-
 process.on('uncaughtException', function() {
 
     //handle
     console.log('error');
 });
+
+// => handle error alway call after function
+
 
 
