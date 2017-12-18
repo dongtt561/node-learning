@@ -43,5 +43,74 @@ process.on('uncaughtException', function() {
 
 // => handle error alway call after function
 
+// Global file name
+__filename // url file
+
+// Global directory
+__dirname
+
+// Current Working in Directory
+process.cwd();
+
+// Set process working in directory
+process.chdir('/usr/'); // if parameter is '/' : directory is partition, 
+process.cwd(); // show working
+
+// sep path of operation
+path = require('path');
+path.sep // windown is '\', MacOS is '/';
+
+// using path to get extension of file or base name
+path = require('path');
+path.extname(<url>);
+path.basename(<url>);
+
+
+// file stream ('fs')
+var fs = require('fs');
+// file exist
+fs.exist('filename', function(exists) {
+   console.log(exists); // exists is true or false
+});
+
+//read File
+fs.readFile('filepath', 'endcode-utf8', function(error, data) {
+    if (error) {
+        console.error(error.message);
+    } else {
+        console.log(data);
+    }
+});
+
+// write file, replace file if file exists
+fs.writeFile(path, data, function(errorr) {
+    if (error) {
+        console.error(error.message);
+    } else {
+        console.log('Write file success');
+    }
+})
+
+// Rename or move file location, replace file if exists
+fs.rename(oldName, newName, function(error) {
+    if (error) {
+        console.error(error.message);
+    } else {
+        console.log('Renmae file success !');
+    }
+});
+
+// Make directory, not make if directory exists
+fs.mkdir(path, function(error) {
+    if (error) {
+        console.error(error.message);
+    } else {
+        console.log('Make directory success: ' + path);
+    }
+})
+
+
+
+
 
 
